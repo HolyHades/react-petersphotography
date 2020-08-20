@@ -89,6 +89,7 @@ main {
 	text-align: center;
 	margin: 0;
 	padding: 0;
+	z-index: 1;
 }
 
 .navoff {
@@ -141,6 +142,7 @@ main {
 	background-color: white;
 	border-radius: 4px;
 	display: none;
+	z-index: 1;
 }
 
 .burgeron {
@@ -270,7 +272,7 @@ main {
 	border-radius: 8px;
 }
 
-.close:hover {
+.close:hover, .close:active {
 	background-color: white;
 	color: #141518;
 }
@@ -324,7 +326,9 @@ main {
 }
 
 .prev:hover,
-.next:hover {
+.next:hover,
+.prev:active,
+.next:active {
 	color: #141518;
 	background-color: white;
 }
@@ -493,7 +497,7 @@ main {
 	margin-bottom: 24px;
 }
 
-.form button:hover {
+.form button:hover, .form button:active {
 	background-color: white;
 	color: #05070e;
 }
@@ -510,6 +514,7 @@ main {
 .abouttext {
 	color: white;
 	font-size: 48px;
+	margin: 24px 20%;
 }
 
 .mainbodyabout img {
@@ -598,8 +603,29 @@ main {
 		width: 300px;
 	}
 
+	.mainbodyabout {
+		grid-template-columns: 1fr;
+	}
+
+	#aboutimage1 {
+		grid-row: 1;
+	}
+
+	#aboutimage2 {
+		grid-row: 3;
+	}
+
+	#abouttext1 {
+		grid-row: 2;
+	}
+
+	#abouttext2 {
+		grid-row: 4;
+	}
+
 	.abouttext {
 		font-size: 24px;
 		width: 300px;
+		margin: 24px 10%;
 	}
 }

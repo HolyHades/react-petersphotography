@@ -613,9 +613,9 @@ function AboutDE() {
 			<main>
 				<h2 className="abouttext">Über Uns</h2>
 				<div className="mainbodyabout">
-					<img src={aboutimg1} alt="aboutimg1"></img>
-					<img src={aboutimg2} alt="aboutimg2"></img>
-					<p>
+					<img src={aboutimg1} alt="aboutimg1" id="aboutimg1"></img>
+					<img src={aboutimg2} alt="aboutimg2" id="aboutimg2"></img>
+					<p id="abouttext1">
 						Mein Name ist Hendrik Edmund Peters, ich bin 18 Jahre
 						alt und werde ab dem 1.9.2020 als BFDler im Flensburger
 						Segel-Club aktiv sein.
@@ -650,7 +650,7 @@ function AboutDE() {
 						Grundschule Geige. Diese Hobbies gehören neben dem
 						Fotografierenzu meinen größten Leidenschaften.
 					</p>
-					<p>
+					<p id="abouttext2">
 						Ich bin Felix Fröhlich, 18 Jahre alt, und kümmere mich
 						hier um die Website. Zudem fotografiere ich auch, damit
 						beschäftige ich mich seit Sommer 2019.
@@ -1192,9 +1192,9 @@ function AboutEN() {
 			<main>
 				<h2 className="abouttext">About Us</h2>
 				<div className="mainbodyabout">
-					<img src={aboutimg1} alt="aboutimg1"></img>
-					<img src={aboutimg2} alt="aboutimg2"></img>
-					<p>
+					<img src={aboutimg1} alt="aboutimg1" id="aboutimg1"></img>
+					<img src={aboutimg2} alt="aboutimg2" id="aboutimg2"></img>
+					<p id="abouttext1">
 						My Name is Hendrik Edmund Peters, I am 18 years old and
 						at the 01.09.2020 I will begin a voluntary service in
 						the Flensburger Sailing-Club.
@@ -1222,7 +1222,7 @@ function AboutEN() {
 						since primary school. These hobbies belong besides
 						photography to my biggest passions.
 					</p>
-					<p>
+					<p id="abouttext2">
 						My Name is Felix Fröhlich, I'm 18 years old, and I
 						manage the website. Photography is one of my greatest
 						passions since I picked it up in Summer 2019.

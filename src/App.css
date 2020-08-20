@@ -1,15 +1,605 @@
+@font-face {
+	font-family: Nunito;
+	src: url("./fonts/nunito.ttf");
+}
+
 ::-webkit-scrollbar {
-  width: 12px;
+	width: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: white;
+	background-color: lightgray;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: black;
+	background-color: #05070e;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+main {
+	text-align: center;
 }
 
 .App {
-  text-align: center;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.switch-wrapper {
+	position: relative;
+	width: 100%;
+}
+
+.switch-wrapper > div {
+	position: absolute;
+	left: 0;
+	width: 100%;
+}
+
+.title {
+	width: 100%;
+}
+
+.title img {
+	width: 400px;
+}
+
+.navbar {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style-type: none;
+	width: 100%;
+	padding: 0;
+	background-color: darkslategray;
+}
+
+.navbar li {
+	padding: 4px 0;
+}
+
+.navbar a {
+	font-size: 28px;
+	color: white;
+	text-decoration: none;
+	padding: 4px 8px;
+	margin: 0 auto;
+}
+
+.navbar a:hover,
+.navbar a:active {
+	color: #05070e;
+	background-color: white;
+}
+
+.navoff,
+.navon {
+	display: none;
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: 0.3s;
+	background-color: #05070e;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.navoff {
+	transform: translateX(-100%);
+}
+
+.navon {
+	transform: translateX(0%);
+}
+
+.linkitem {
+	height: 60px;
+}
+
+.navoff h2,
+.navon h2 {
+	color: white;
+	margin: 24px 0;
+	font-size: 56px;
+}
+
+.navoff a,
+.navon a {
+	color: white;
+	text-decoration: none;
+	font-size: 32px;
+	margin: 0;
+	padding: 8px 16px;
+	transition: 0.3s;
+	border-radius: 4px;
+}
+
+.navoff a:hover,
+.navon a:hover,
+.navoff a:active,
+.navon a:active {
+	color: #05070e;
+	background-color: white;
+}
+
+.burgeroff,
+.burgeron {
+	position: fixed;
+	bottom: 32px;
+	left: 32px;
+	width: 52px;
+	height: 44px;
+	padding: 8px;
+	cursor: pointer;
+	background-color: white;
+	border-radius: 4px;
+	display: none;
+}
+
+.burgeron {
+	background-color: white;
+}
+
+.bar1off,
+.bar2off,
+.bar3off {
+	width: 36px;
+	height: 4px;
+	background-color: #05070e;
+	position: relative;
+	border-radius: 2px;
+	transition: 0.3s;
+}
+
+.bar2off {
+	top: 8px;
+}
+
+.bar3off {
+	top: 16px;
+}
+
+.bar1on,
+.bar2on,
+.bar3on {
+	width: 36px;
+	height: 4px;
+	background-color: #05070e;
+	position: relative;
+	border-radius: 2px;
+	transition: 0.3s;
+}
+
+.bar1on {
+	transform: rotate(45deg) translateY(8px) translateX(9px);
+}
+
+.bar2on {
+	top: 8px;
+	opacity: 0;
+}
+
+.bar3on {
+	top: 16px;
+	transform: rotate(-45deg) translateY(-8px) translateX(9px);
+}
+
+.mainbodyhome {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	text-align: center;
+}
+
+.mainbodyhome h2,
+.mainbodyhome h3,
+.mainbodyhome p {
+	color: white;
+	margin: 16px 20%;
+}
+
+.mainbodyhome h2 {
+	font-size: 48px;
+}
+
+.mainbodyhome h3 {
+	font-size: 36px;
+}
+
+.mainbodyhome p {
+	font-size: 24px;
+}
+
+.mainbodyhome a {
+	color: dodgerblue;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.mainbodyhome a:hover,
+.mainbodyhome a:active {
+	color: deepskyblue;
+}
+
+.mainbodygallery {
+	width: 100%;
+	text-align: center;
+}
+
+.mainbodygallery h2 {
+	color: white;
+	font-size: 48px;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 24px;
+	margin: 0 5%;
+}
+
+.gallery img {
+	width: 100%;
+	border-radius: 4px;
+	border: 2px solid white;
+	transition: 0.3s;
+}
+
+.gallery img:hover {
+	opacity: 0.8;
+}
+
+.close {
+	position: absolute;
+	top: 24px;
+	right: 24px;
+	color: white;
+	font-size: 48px;
+	font-weight: bold;
+	transition: 0.3s;
+	cursor: pointer;
+	padding: 0 16px;
+	border-radius: 8px;
+}
+
+.close:hover {
+	background-color: white;
+	color: #141518;
+}
+
+.imagecontainer {
+	background-color: #141518;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.image {
+	width: 70%;
+	margin: 0 auto;
+	align-self: center;
+	animation-name: fade-in;
+	animation-duration: 1s;
+}
+
+.image img {
+	border-radius: 8px;
+	width: 100%;
+}
+
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	transition: 0.3s;
+	border-radius: 0 8px 8px 0;
+	font-size: 40px;
+	outline: none;
+}
+
+.prev {
+	left: 0;
+}
+
+.next {
+	right: 0;
+	border-radius: 8px 0 0 8px;
+}
+
+.prev:hover,
+.next:hover {
+	color: #141518;
+	background-color: white;
+}
+
+.mainbodyprices {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	text-align: center;
+}
+
+.mainbodyprices h2,
+.mainbodyprices p {
+	color: white;
+	margin: 16px 20%;
+}
+
+.mainbodyprices h2 {
+	font-size: 48px;
+}
+
+.mainbodyprices p {
+	font-size: 24px;
+}
+
+.mainbodyprices a {
+	color: dodgerblue;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 24px;
+}
+
+.mainbodyprices a:hover,
+.mainbodyprices a:active {
+	color: deepskyblue;
+}
+
+.mainbodycontact h2 {
+	color: white;
+  font-size: 48px;
+  margin: 16px 20%;
+}
+
+.mainbodycontact p {
+	color: white;
+	font-size: 24px;
+	margin: 0 20% 24px 20%;
+}
+
+.mainbodycontact a {
+	color: dodgerblue;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.mainbodycontact a:hover,
+.mainbodycontact a:active {
+	color: deepskyblue;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.inputwrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.form label {
+	position: absolute;
+	font-size: 24px;
+	top: 18px;
+	left: 0;
+	pointer-events: none;
+	transition: 0.3s;
+	color: white;
+}
+
+.form input {
+	appearance: none;
+	border-radius: 0;
+	width: 500px;
+	font-size: 24px;
+	margin-top: 8px;
+	margin-bottom: 16px;
+	padding: 10px;
+	padding-left: 0;
+	border: none;
+	border-bottom: 1px solid white;
+	transition: 0.3s;
+	outline: none;
+	background-color: transparent;
+	color: white;
+}
+
+.form input:focus {
+	border-bottom: 1px solid dodgerblue;
+}
+
+#messagetextarea {
+	appearance: none;
+	border-radius: 0;
+	width: 500px;
+	overflow: hidden;
+	font-size: 24px;
+	resize: none;
+	margin-top: 8px;
+	margin-bottom: 16px;
+	padding: 10px;
+	padding-left: 0;
+	border: none;
+	border-bottom: 1px solid white;
+	transition: 0.3s;
+	outline: none;
+	background-color: transparent;
+	color: white;
+}
+
+#messagetextarea:focus {
+	border-bottom: 1px solid dodgerblue;
+}
+
+#nameinput:focus ~ #namelabel,
+#nameinput:valid ~ #namelabel,
+#emailinput:focus ~ #emaillabel,
+#emailinput:valid ~ #emaillabel,
+#messagetextarea:focus ~ #messagelabel,
+#messagetextarea:valid ~ #messagelabel {
+	top: 0;
+	font-size: 16px;
+}
+
+.submitde {
+	width: 164px;
+	height: 50px;
+	font-size: 28px;
+	border-radius: 8px;
+	border: none;
+	background-color: #05070e;
+	color: white;
+	transition: 0.3s;
+	cursor: pointer;
+	border: 1px solid white;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 24px;
+}
+
+.submiten {
+	width: 128px;
+	height: 50px;
+	font-size: 28px;
+	border-radius: 8px;
+	border: none;
+	background-color: #05070e;
+	color: white;
+	transition: 0.3s;
+	cursor: pointer;
+	border: 1px solid white;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 24px;
+}
+
+.form button:hover {
+	background-color: white;
+	color: #05070e;
+}
+
+.mainbodyabout {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 24px;
+	width: 80%;
+	margin: 0 10%;
+	text-align: center;
+}
+
+.abouttext {
+	color: white;
+	font-size: 48px;
+}
+
+.mainbodyabout img {
+	width: 50%;
+	margin: auto;
+	border-radius: 4px;
+	border: 2px solid white;
+}
+
+.mainbodyabout p {
+	color: white;
+	font-size: 24px;
+	margin: 16px 10%;
+}
+
+@media (max-width: 800px) {
+	.gallery {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 600px) {
+	.form input {
+		width: 400px;
+	}
+
+	#messagetextarea {
+		width: 400px;
+	}
+}
+
+@media (max-width: 500px) {
+	.title img {
+		width: 100%;
+	}
+
+	.navbar {
+		display: none;
+	}
+
+	.burgeroff,
+	.burgeron {
+		display: block;
+	}
+
+	.navoff,
+	.navon {
+		display: flex;
+	}
+
+	.mainbodyhome h2,
+	.mainbodyhome h3,
+	.mainbodyhome p,
+	.mainbodyprices h2,
+	.mainbodyprices p,
+	.mainbodycontact h2,
+	.mainbodycontact p {
+		margin: 16px 10%;
+	}
+
+	.mainbodyhome h2,
+	.mainbodyprices h2,
+	.mainbodycontact h2 {
+		font-size: 40px;
+	}
+
+	.mainbodyhome h3 {
+		font-size: 32px;
+	}
+
+	.mainbodyhome p,
+	.mainbodyprices p,
+	.mainbodycontact p {
+		font-size: 20px;
+	}
+
+	.gallery {
+		grid-template-columns: 1fr;
+  }
+  
+  .form input {
+		width: 300px;
+	}
+
+	#messagetextarea {
+		width: 300px;
+	}
+
+	.abouttext {
+		font-size: 24px;
+		width: 300px;
+	}
 }

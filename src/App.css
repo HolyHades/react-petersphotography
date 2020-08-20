@@ -619,6 +619,10 @@ main {
 		grid-template-columns: 1fr;
 	}
 
+	.mainbodyabout p {
+		margin: 16px 0;
+	}
+
 	#aboutimage1 {
 		grid-row: 1;
 	}

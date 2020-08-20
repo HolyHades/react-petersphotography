@@ -589,7 +589,8 @@ main {
 
 	.mainbodyhome p,
 	.mainbodyprices p,
-	.mainbodycontact p {
+	.mainbodycontact p,
+	.mainbodyprices a {
 		font-size: 20px;
 	}
 

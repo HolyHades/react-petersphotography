@@ -272,7 +272,8 @@ main {
 	border-radius: 8px;
 }
 
-.close:hover, .close:active {
+.close:hover,
+.close:active {
 	background-color: white;
 	color: #141518;
 }
@@ -369,8 +370,8 @@ main {
 
 .mainbodycontact h2 {
 	color: white;
-  font-size: 48px;
-  margin: 16px 20%;
+	font-size: 48px;
+	margin: 16px 20%;
 }
 
 .mainbodycontact p {
@@ -497,7 +498,8 @@ main {
 	margin-bottom: 24px;
 }
 
-.form button:hover, .form button:active {
+.form button:hover,
+.form button:active {
 	background-color: white;
 	color: #05070e;
 }
@@ -593,9 +595,9 @@ main {
 
 	.gallery {
 		grid-template-columns: 1fr;
-  }
-  
-  .form input {
+	}
+
+	.form input {
 		width: 300px;
 	}
 

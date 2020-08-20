@@ -125,19 +125,19 @@ function HomeDE() {
 							<h2>Navigation</h2>
 						</li>
 						<li className="linkitem">
-							<Link to="/de">Home</Link>
+							<Link to="/de" onClick={() => setOpen(!open)}>Home</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/de/galerie">Galerie</Link>
+							<Link to="/de/galerie" onClick={() => setOpen(!open)}>Galerie</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/de/angebot">Angebot</Link>
+							<Link to="/de/angebot" onClick={() => setOpen(!open)}>Angebot</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/de/kontakt">Kontakt</Link>
+							<Link to="/de/kontakt" onClick={() => setOpen(!open)}>Kontakt</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/de/about">Über Uns</Link>
+							<Link to="/de/about" onClick={() => setOpen(!open)}>Über Uns</Link>
 						</li>
 						<li className="linkitem">
 							<a href="https://www.pictrs.com/petersphotography?l=de">
@@ -145,7 +145,7 @@ function HomeDE() {
 							</a>
 						</li>
 						<li>
-							<Link to="/en">Englisch</Link>
+							<Link to="/en" onClick={() => setOpen(!open)}>Englisch</Link>
 						</li>
 					</ul>
 					<div
@@ -249,19 +249,19 @@ function Galerie() {
 							<h2>Navigation</h2>
 						</li>
 						<li className="linkitem">
-							<Link to="/de">Home</Link>
+							<Link to="/de" onClick={() => setOpen(!open)}>Home</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/de/galerie">Galerie</Link>
+							<Link to="/de/galerie" onClick={() => setOpen(!open)}>Galerie</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/de/angebot">Angebot</Link>
+							<Link to="/de/angebot" onClick={() => setOpen(!open)}>Angebot</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/de/kontakt">Kontakt</Link>
+							<Link to="/de/kontakt" onClick={() => setOpen(!open)}>Kontakt</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/de/about">Über Uns</Link>
+							<Link to="/de/about" onClick={() => setOpen(!open)}>Über Uns</Link>
 						</li>
 						<li className="linkitem">
 							<a href="https://www.pictrs.com/petersphotography?l=de">
@@ -269,7 +269,7 @@ function Galerie() {
 							</a>
 						</li>
 						<li>
-							<Link to="/en/gallery">Englisch</Link>
+							<Link to="/en/gallery" onClick={() => setOpen(!open)}>Englisch</Link>
 						</li>
 					</ul>
 					<div
@@ -367,19 +367,19 @@ function Angebot() {
 							<h2>Navigation</h2>
 						</li>
 						<li className="linkitem">
-							<Link to="/de">Home</Link>
+							<Link to="/de" onClick={() => setOpen(!open)}>Home</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/de/galerie">Galerie</Link>
+							<Link to="/de/galerie" onClick={() => setOpen(!open)}>Galerie</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/de/angebot">Angebot</Link>
+							<Link to="/de/angebot" onClick={() => setOpen(!open)}>Angebot</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/de/kontakt">Kontakt</Link>
+							<Link to="/de/kontakt" onClick={() => setOpen(!open)}>Kontakt</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/de/about">Über Uns</Link>
+							<Link to="/de/about" onClick={() => setOpen(!open)}>Über Uns</Link>
 						</li>
 						<li className="linkitem">
 							<a href="https://www.pictrs.com/petersphotography?l=de">
@@ -387,7 +387,7 @@ function Angebot() {
 							</a>
 						</li>
 						<li>
-							<Link to="/en/prices">Englisch</Link>
+							<Link to="/en/prices" onClick={() => setOpen(!open)}>Englisch</Link>
 						</li>
 					</ul>
 					<div
@@ -453,19 +453,19 @@ function Kontakt() {
 							<h2>Navigation</h2>
 						</li>
 						<li className="linkitem">
-							<Link to="/de">Home</Link>
+							<Link to="/de" onClick={() => setOpen(!open)}>Home</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/de/galerie">Galerie</Link>
+							<Link to="/de/galerie" onClick={() => setOpen(!open)}>Galerie</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/de/angebot">Angebot</Link>
+							<Link to="/de/angebot" onClick={() => setOpen(!open)}>Angebot</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/de/kontakt">Kontakt</Link>
+							<Link to="/de/kontakt" onClick={() => setOpen(!open)}>Kontakt</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/de/about">Über Uns</Link>
+							<Link to="/de/about" onClick={() => setOpen(!open)}>Über Uns</Link>
 						</li>
 						<li className="linkitem">
 							<a href="https://www.pictrs.com/petersphotography?l=de">
@@ -473,7 +473,7 @@ function Kontakt() {
 							</a>
 						</li>
 						<li>
-							<Link to="/en/contact">Englisch</Link>
+							<Link to="/en/contact" onClick={() => setOpen(!open)}>Englisch</Link>
 						</li>
 					</ul>
 					<div
@@ -579,19 +579,19 @@ function AboutDE() {
 							<h2>Navigation</h2>
 						</li>
 						<li className="linkitem">
-							<Link to="/de">Home</Link>
+							<Link to="/de" onClick={() => setOpen(!open)}>Home</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/de/galerie">Galerie</Link>
+							<Link to="/de/galerie" onClick={() => setOpen(!open)}>Galerie</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/de/angebot">Angebot</Link>
+							<Link to="/de/angebot" onClick={() => setOpen(!open)}>Angebot</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/de/kontakt">Kontakt</Link>
+							<Link to="/de/kontakt" onClick={() => setOpen(!open)}>Kontakt</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/de/about">Über Uns</Link>
+							<Link to="/de/about" onClick={() => setOpen(!open)}>Über Uns</Link>
 						</li>
 						<li className="linkitem">
 							<a href="https://www.pictrs.com/petersphotography?l=de">
@@ -599,7 +599,7 @@ function AboutDE() {
 							</a>
 						</li>
 						<li>
-							<Link to="/en/about">Englisch</Link>
+							<Link to="/en/about" onClick={() => setOpen(!open)}>Englisch</Link>
 						</li>
 					</ul>
 					<div
@@ -709,19 +709,19 @@ function HomeEN() {
 							<h2>Navigation</h2>
 						</li>
 						<li className="linkitem">
-							<Link to="/en">Home</Link>
+							<Link to="/en" onClick={() => setOpen(!open)}>Home</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/en/gallery">Gallery</Link>
+							<Link to="/en/gallery" onClick={() => setOpen(!open)}>Gallery</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/en/prices">Prices</Link>
+							<Link to="/en/prices" onClick={() => setOpen(!open)}>Prices</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/en/contact">Contact</Link>
+							<Link to="/en/contact" onClick={() => setOpen(!open)}>Contact</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/en/about">About Us</Link>
+							<Link to="/en/about" onClick={() => setOpen(!open)}>About Us</Link>
 						</li>
 						<li className="linkitem">
 							<a href="https://www.pictrs.com/petersphotography?l=en">
@@ -729,7 +729,7 @@ function HomeEN() {
 							</a>
 						</li>
 						<li>
-							<Link to="/de">German</Link>
+							<Link to="/de" onClick={() => setOpen(!open)}>German</Link>
 						</li>
 					</ul>
 					<div
@@ -831,19 +831,19 @@ function Gallery() {
 							<h2>Navigation</h2>
 						</li>
 						<li className="linkitem">
-							<Link to="/en">Home</Link>
+							<Link to="/en" onClick={() => setOpen(!open)}>Home</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/en/gallery">Gallery</Link>
+							<Link to="/en/gallery" onClick={() => setOpen(!open)}>Gallery</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/en/prices">Prices</Link>
+							<Link to="/en/prices" onClick={() => setOpen(!open)}>Prices</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/en/contact">Contact</Link>
+							<Link to="/en/contact" onClick={() => setOpen(!open)}>Contact</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/en/about">About Us</Link>
+							<Link to="/en/about" onClick={() => setOpen(!open)}>About Us</Link>
 						</li>
 						<li className="linkitem">
 							<a href="https://www.pictrs.com/petersphotography?l=en">
@@ -851,7 +851,7 @@ function Gallery() {
 							</a>
 						</li>
 						<li>
-							<Link to="/de/galerie">German</Link>
+							<Link to="/de/galerie" onClick={() => setOpen(!open)}>German</Link>
 						</li>
 					</ul>
 					<div
@@ -949,19 +949,19 @@ function Prices() {
 							<h2>Navigation</h2>
 						</li>
 						<li className="linkitem">
-							<Link to="/en">Home</Link>
+							<Link to="/en" onClick={() => setOpen(!open)}>Home</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/en/gallery">Gallery</Link>
+							<Link to="/en/gallery" onClick={() => setOpen(!open)}>Gallery</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/en/prices">Prices</Link>
+							<Link to="/en/prices" onClick={() => setOpen(!open)}>Prices</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/en/contact">Contact</Link>
+							<Link to="/en/contact" onClick={() => setOpen(!open)}>Contact</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/en/about">About Us</Link>
+							<Link to="/en/about" onClick={() => setOpen(!open)}>About Us</Link>
 						</li>
 						<li className="linkitem">
 							<a href="https://www.pictrs.com/petersphotography?l=en">
@@ -969,7 +969,7 @@ function Prices() {
 							</a>
 						</li>
 						<li>
-							<Link to="/de/angebot">German</Link>
+							<Link to="/de/angebot" onClick={() => setOpen(!open)}>German</Link>
 						</li>
 					</ul>
 					<div
@@ -1035,19 +1035,19 @@ function Contact() {
 							<h2>Navigation</h2>
 						</li>
 						<li className="linkitem">
-							<Link to="/en">Home</Link>
+							<Link to="/en" onClick={() => setOpen(!open)}>Home</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/en/gallery">Gallery</Link>
+							<Link to="/en/gallery" onClick={() => setOpen(!open)}>Gallery</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/en/prices">Prices</Link>
+							<Link to="/en/prices" onClick={() => setOpen(!open)}>Prices</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/en/contact">Contact</Link>
+							<Link to="/en/contact" onClick={() => setOpen(!open)}>Contact</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/en/about">About Us</Link>
+							<Link to="/en/about" onClick={() => setOpen(!open)}>About Us</Link>
 						</li>
 						<li className="linkitem">
 							<a href="https://www.pictrs.com/petersphotography?l=en">
@@ -1055,7 +1055,7 @@ function Contact() {
 							</a>
 						</li>
 						<li>
-							<Link to="/de/kontakt">German</Link>
+							<Link to="/de/kontakt" onClick={() => setOpen(!open)}>German</Link>
 						</li>
 					</ul>
 					<div
@@ -1160,19 +1160,19 @@ function AboutEN() {
 							<h2>Navigation</h2>
 						</li>
 						<li className="linkitem">
-							<Link to="/en">Home</Link>
+							<Link to="/en" onClick={() => setOpen(!open)}>Home</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/en/gallery">Gallery</Link>
+							<Link to="/en/gallery" onClick={() => setOpen(!open)}>Gallery</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/en/prices">Prices</Link>
+							<Link to="/en/prices" onClick={() => setOpen(!open)}>Prices</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/en/contact">Contact</Link>
+							<Link to="/en/contact" onClick={() => setOpen(!open)}>Contact</Link>
 						</li>
 						<li className="linkitem">
-							<Link to="/en/about">About Us</Link>
+							<Link to="/en/about" onClick={() => setOpen(!open)}>About Us</Link>
 						</li>
 						<li className="linkitem">
 							<a href="https://www.pictrs.com/petersphotography?l=en">
@@ -1180,7 +1180,7 @@ function AboutEN() {
 							</a>
 						</li>
 						<li>
-							<Link to="/de/about">German</Link>
+							<Link to="/de/about" onClick={() => setOpen(!open)}>German</Link>
 						</li>
 					</ul>
 					<div

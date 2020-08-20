@@ -403,10 +403,12 @@ function Angebot() {
 			<main>
 				<div className="mainbodyprices">
 					<h2>Unser Angebot</h2>
-					<p>Kommt in Kürze. Kontaktieren sie uns per E-Mail:</p>
-					<a href="mailto:hendrikfelixphotography@gmail.com">
-						hendrikfelixphotography@gmail.com
-					</a>
+					<p>
+						Kommt in Kürze. Kontaktieren sie uns per E-Mail:
+						<a href="mailto:hendrikfelixphotography@gmail.com">
+							hendrikfelixphotography@gmail.com
+						</a>
+					</p>
 				</div>
 			</main>
 		</div>
@@ -983,10 +985,12 @@ function Prices() {
 			<main>
 				<div className="mainbodyprices">
 					<h2>Out Prices</h2>
-					<p>Coming soon. Please contact us via E-Mail:</p>
-					<a href="mailto:hendrikfelixphotography@gmail.com">
-						hendrikfelixphotography@gmail.com
-					</a>
+					<p>
+						Coming soon. Please contact us via E-Mail:
+						<a href="mailto:hendrikfelixphotography@gmail.com">
+							hendrikfelixphotography@gmail.com
+						</a>
+					</p>
 				</div>
 			</main>
 		</div>

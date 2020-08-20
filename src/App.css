@@ -597,6 +597,15 @@ main {
 		grid-template-columns: 1fr;
 	}
 
+	.image {
+		width: 90%;
+	}
+
+	.prev,
+	.next {
+		display: none;
+	}
+
 	.form input {
 		width: 300px;
 	}
